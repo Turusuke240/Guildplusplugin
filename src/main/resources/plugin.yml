@@ -1,0 +1,33 @@
+name: GuildPlus
+version: ${project.version}
+main: com.guildplus.GuildPlusPlugin
+api-version: '1.21'
+authors: [GuildPlus]
+description: Full-featured guild plugin for Paper 1.21.1+
+
+softdepend: [PlaceholderAPI, Vault, LuckPerms, XConomy]
+
+commands:
+  guild:
+    description: メインギルドコマンド
+    usage: /guild help
+    aliases: [g]
+    permission: guildplus.use
+  gc:
+    description: ギルドチャットショートカット
+    usage: /gc <メッセージ>
+    permission: guildplus.chat
+
+permissions:
+  guildplus.use:
+    description: ギルドシステムの使用を許可
+    default: true
+  guildplus.chat:
+    description: ギルドチャットの使用を許可
+    default: true
+  guildplus.admin:
+    description: ギルド管理者権限
+    default: op
+  guildplus.bypass.cost:
+    description: ギルド作成・変更コストを免除
+    default: op

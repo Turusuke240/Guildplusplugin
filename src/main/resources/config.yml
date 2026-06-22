@@ -1,0 +1,41 @@
+# GuildPlus Configuration
+
+guild:
+  # ギルド作成費用 (Vault使用)
+  creation-cost: 1000.0
+  # ギルド名変更コスト
+  rename-cost: 500.0
+  # タグ変更コスト
+  tag-cost: 200.0
+  # 招待有効時間 (秒)
+  invite-expire-seconds: 60
+  # PVP初期設定
+  default-pvp: false
+
+  # ギルド経験値システム
+  exp-enabled: true
+  # Mob1体討伐あたりの基本EXP
+  exp-per-kill: 5
+  # エンティティタイプ別ボーナスEXP (例: ender_dragon: 1000)
+  exp-bonus:
+    ender_dragon: 1000
+    wither: 500
+    elder_guardian: 200
+    ravager: 50
+    blaze: 10
+    creeper: 5
+
+chat:
+  # チャットPrefix
+  prefix: "&7[&bGuild&7]&r"
+  # グローバルチャットのギルド名Prefixカラー
+  guild-name-color: "&6"
+  # &カラーコード有効
+  allow-color-codes: true
+
+chest:
+  enabled: true
+  size: 54
+
+economy:
+  enabled: true
